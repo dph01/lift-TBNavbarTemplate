@@ -104,5 +104,17 @@ class Boot extends Logger {
 
     // Make a transaction span the whole HTTP request
     S.addAround(DB.buildLoanWrapper)
+    
+        // create a test user if it doesn't already exist
+    def email = "fred@fred.com"
+    User.find(By(User.email,email)).openOr( {
+        debug("creating initial user:")
+        User.create.firstName("Fred")
+          .lastName("Bloggs")
+          .password("password")
+          .email(email)
+          .validated(true)
+          .saveMe
+    })
   }
 }
