@@ -21,4 +21,4 @@ To download and run this application:
 
 3. In a browser go to [http://localhost:8080](http://localhost:8080).
 
-For comments, questions, etc. please see the accompanying [blogpost](http://http://tech.damianhelme.com/twitter-bootstrap-navbar-dropdowns-and-lifts)
+For comments, questions, etc. please see the accompanying [blogpost](http://tech.damianhelme.com/twitter-bootstrap-navbar-dropdowns-and-lifts)
