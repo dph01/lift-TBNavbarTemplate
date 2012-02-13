@@ -1,4 +1,4 @@
-This is an application template for TBNav, a utility to create Twitter Bootstrap styled navigation
+This is an application template for [TBNav](https://github.com/dph01/lift-TBUtils), a utility to create Twitter Bootstrap styled navigation
 bar with drop down menus from the output of Lift's Menu.builder. 
 
 You can see a running example of the code here: [www.damianhelme.com/tbnav](www.damianhelme.com/tbnav)
@@ -19,5 +19,5 @@ To download and run this application:
         cd lift-TBNavbarTemplate
         ./sbt ~container:start
 
-
+3. In a browser go to [http://localhost:8080](http://localhost:8080).
 
