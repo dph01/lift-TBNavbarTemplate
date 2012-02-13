@@ -20,13 +20,13 @@
 		<div class="navbar-inner">
 			<div class="container">
 				<a class="brand" href="/">My App</a> 
-				<span class="lift:TBNav.menuToTBNav?eager_eval=true"> 
+			  <!-- create the 'main' menu items -->
+				<span data-lift="lift:TBNav.menuToTBNav?eager_eval=true"> 
 				  <span data-lift="lift:Menu.builder?top:class=nav;li_item:class=active;linkToSelf=true;expandAll=true;group=main"></span>
 				</span>
+			  <!-- create the 'user' (e.g. login/logout etc) menu items -->
 				<span data-lift="lift:TBNav.menuToTBNav?eager_eval=true"> 
 				  <span data-lift="lift:Menu.builder?top:class=nav pull-right;li_item:class=active;linkToSelf=true;expandAll=true;group=user"></span>
-				<!-- 
-				 -->
 				</span>
 			</div>
 		</div>

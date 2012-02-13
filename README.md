@@ -9,7 +9,7 @@ To download and run this application:
 
 1. In your workspace directory, download and build the TBUtils library:
 
-        git clone https://github.com/dph01/lift-TBUtils
+        git clone git://github.com/dph01/lift-TBUtils.git
         cd liftTBUtils
         ./sbt publish-local
 

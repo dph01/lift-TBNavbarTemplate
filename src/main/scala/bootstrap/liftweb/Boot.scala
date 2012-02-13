@@ -48,23 +48,23 @@ class Boot extends Logger {
     def userLinkText = User.currentUser.map(_.shortName).openOr("not logged in").toString
     
     // Build SiteMap
-    val entries = List(Menu("Home") / "index" >> LocGroup("main"),
-         Menu("Page 1") / "page1" >> LocGroup("main"),
-         Menu("Page 2") / "page2" >> LocGroup("main"),
-         Menu("Page 3") / "page3" >> LocGroup("main") >> PlaceHolder submenus (
-         // Menu("Page 3") / "page3" >> LocGroup("main") submenus (
-             Menu("Page 3a") / "page3a" ,  
-             Menu("Page 3b") / "page3b" ,
-             Menu("Page 3c") / "page3c") ,
-         User.loginMenuLoc.open_!,
-         User.createUserMenuLoc.open_!,
-         Menu("user",userLinkText)  / "#" >> 
-           MustBeLoggedIn >> LocGroup("user") >> PlaceHolder submenus (
-               User.logoutMenuLoc.open_!,
-               User.editUserMenuLoc.open_!,
-               User.changePasswordMenuLoc.open_!
-                 )
-        )
+val entries = List(Menu("Home") / "index" >> LocGroup("main"),
+     Menu("Page 1") / "page1" >> LocGroup("main"),
+     Menu("Page 2") / "page2" >> LocGroup("main"),
+     Menu("Page 3") / "page3" >> LocGroup("main") >> PlaceHolder submenus (
+     // Menu("Page 3") / "page3" >> LocGroup("main") submenus (
+         Menu("Page 3a") / "page3a" ,  
+         Menu("Page 3b") / "page3b" ,
+         Menu("Page 3c") / "page3c") ,
+     User.loginMenuLoc.open_!,
+     User.createUserMenuLoc.open_!,
+     Menu("user",userLinkText)  / "#" >> 
+       MustBeLoggedIn >> LocGroup("user") >> PlaceHolder submenus (
+           User.logoutMenuLoc.open_!,
+           User.editUserMenuLoc.open_!,
+           User.changePasswordMenuLoc.open_!
+             )
+    )
         
     def sitemap = SiteMap(entries: _*)
       
