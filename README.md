@@ -3,8 +3,6 @@ bar with drop down menus from the output of Lift's Menu.builder.
 
 You can see a running example of the code here: [www.damianhelme.com/tbnav](www.damianhelme.com/tbnav)
 
-For a more detailed write up of this code, see here: 
-
 To download and run this application:
 
 1. In your workspace directory, download and build the TBUtils library:
