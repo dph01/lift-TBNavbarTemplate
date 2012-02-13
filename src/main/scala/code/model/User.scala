@@ -24,9 +24,6 @@ object User extends User with MetaMegaProtoUser[User] {
   
   override def loginMenuLocParams = LocGroup("user") :: super.loginMenuLocParams
   override def createUserMenuLocParams = LocGroup("user") :: super.createUserMenuLocParams
-  // override def logoutMenuLocParams = LocGroup("user") :: super.logoutMenuLocParams
-  // override def editUserMenuLocParams = LocGroup("user") :: super.editUserMenuLocParams
-  // override def changePasswordMenuLocParams = LocGroup("user") :: super.changePasswordMenuLocParams
 }
 
 /**
